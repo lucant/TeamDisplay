@@ -1,15 +1,15 @@
 ---
 layout: default
-title: 2018 Ed-Tech Investments
+title: Test something
 ---
 
 <!-- Acquisitions -->
-{% assign Tabellenblatt1 = site.data.2018 %}
-{% assign Tabellenblatt1 = investments | sort:"Name" %}
+{% assign team = site.data.team %}
+{% assign team = team | sort:"Name" %}
 
 <!-- Document -->
 
-{% for element in Tabellenblatt1 %}
+{% for element in team %}
 
 <ul>
 <li><strong>{{ element.Name }}</strong> (Amount raised: {{ element.Lead }}; Investors: {{ element.Beschreibung }})</li>
