@@ -1,0 +1,18 @@
+---
+layout: default
+title: 2018 Ed-Tech Investments
+---
+
+<!-- Acquisitions -->
+{% assign Tabellenblatt1 = site.data.2018 %}
+{% assign Tabellenblatt1 = investments | sort:"Name" %}
+
+<!-- Document -->
+
+{% for element in Tabellenblatt1 %}
+
+<ul>
+<li><strong>{{ element.Name }}</strong> (Amount raised: {{ element.Lead }}; Investors: {{ element.Beschreibung }})</li>
+</ul>
+
+{% endfor %}
